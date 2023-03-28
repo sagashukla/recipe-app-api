@@ -1,0 +1,11 @@
+python -m venv /py - creates new virtual env to store dependencies
+/py/bin/pip install --upgrade pip - update pip
+/py/bin/pip install -r /tmp/requirements.txt - install the list of requirements in the docker image
+rm -rf /tmp - remove the tmp file 
+adduser \
+        --disabled-password \
+        --no-create-home \
+        django-user -- add user command to add new user in the docker image
+
+
+command to create a django project - docker-compose run --rm app sh -c "django-admin startproject app ."
