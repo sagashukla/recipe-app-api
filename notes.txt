@@ -9,3 +9,6 @@ adduser \
 
 
 command to create a django project - docker-compose run --rm app sh -c "django-admin startproject app ."
+
+command to migrate models in db:
+docker-compose run --rm app sh -c "python manage.py wait_for_db && python manage.py migrate"
